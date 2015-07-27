@@ -1,4 +1,11 @@
 <p id="notice"><%= notice %></p>
+      <div class="heroimage">
+        <h1 class="hero_header">Make your house your home</h1>
+      <h4>Buy & sell furniture in your city</h4>
+        <img src="http://res.cloudinary.com/re-cycle-it/image/upload/b_rgb:6b6a6a,o_67/v1437963642/table_ksfxfu.jpg" class="img-responsive">
+      </div>
+    </a>
+<div class="container">
 <div class="center">
 <div class="row">
   <% @listings.each do |listing| %>
@@ -10,7 +17,6 @@
         <p><%= number_to_currency(listing.price) %></p>
         <%= link_to 'Show', listing, class: "btn btn-link" %>
         <%= link_to 'Edit', edit_listing_path(listing), class: "btn btn-link" %>
-        <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-link" %>
       </div>
     </div>
   </div>
